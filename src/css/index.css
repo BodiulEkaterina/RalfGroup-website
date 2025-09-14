@@ -107,7 +107,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 20px;
     position: relative;
 }
 
@@ -462,9 +462,15 @@ footer {
 }
 
 /* Адаптивность */
-@media (max-width: 992px) {
+@media (max-width: 996px) {
+
+    .header-container {
+        padding: 15px 15px;
+    }
+
     .about-container {
         flex-direction: column;
+        padding: 15px 15px;
     }
     
     .about-image {
@@ -483,11 +489,12 @@ footer {
 
 @media (max-width: 768px) {
     .header-container {
-        padding: 15px 0;
+        padding: 15px 15px;
     }
     
     .burger-menu {
         display: flex;
+        margin-right: 15px;
     }
     
     .nav-menu {
@@ -593,7 +600,7 @@ footer {
 
 @media (max-width: 400px) {
     .container {
-        padding: 0 15px;
+        padding: 15px 15px;
     }
     
     h1 {
