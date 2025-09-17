@@ -111,76 +111,132 @@
     </section>
 
     <!-- Проекты -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Наши проекты</h2>
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Наши проекты</h2>
+        
+        <!-- Кнопки переключения вкладок -->
+        <div class="projects-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-category="all">Все проекты</button>
+                <button class="tab-btn" data-category="industrial">Офисная планировка</button>
+                <button class="tab-btn" data-category="residential">Жилые комплексы</button>
+                <button class="tab-btn" data-category="public">Общественные здания</button>
+                <button class="tab-btn" data-category="landscapes">Ландшафты</button>
+                <button class="tab-btn" data-category="interior">Интерьер</button>
+            </div>
+            
+            <!-- Контейнер для проектов -->
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="public">
                     <img src="src/img/prog1.png" alt="Бизнес-центр" class="project-image">
                     <div class="project-overlay">
                         <h3>Бизнес-центр "Престиж"</h3>
                         <p>Многофункциональный комплекс класса А</p>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="public">
+                    <img src="src/img/prog1.png" alt="Бизнес-центр" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Бизнес-центр "Престиж"</h3>
+                        <p>Многофункциональный комплекс класса А</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="public">
+                    <img src="src/img/prog1.png" alt="Бизнес-центр" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Бизнес-центр "Престиж"</h3>
+                        <p>Многофункциональный комплекс класса А</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential">
                     <img src="src/img/prog2.png" alt="Жилой комплекс" class="project-image">
                     <div class="project-overlay">
                         <h3>ЖК "Северное сияние"</h3>
                         <p>Элитный жилой комплекс с развитой инфраструктурой</p>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="residential">
+                    <img src="src/img/prog2.png" alt="Жилой комплекс" class="project-image">
+                    <div class="project-overlay">
+                        <h3>ЖК "Северное сияние"</h3>
+                        <p>Элитный жилой комплекс с развитой инфраструктурой</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential">
+                    <img src="src/img/prog2.png" alt="Жилой комплекс" class="project-image">
+                    <div class="project-overlay">
+                        <h3>ЖК "Северное сияние"</h3>
+                        <p>Элитный жилой комплекс с развитой инфраструктурой</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="industrial">
                     <img src="src/img/prog3.png" alt="Производственный комплекс" class="project-image">
                     <div class="project-overlay">
                         <h3>Производственный комплекс</h3>
                         <p>Современное предприятие полного цикла</p>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="src/img/prog1.png" alt="Бизнес-центр" class="project-image">
-                    <div class="project-overlay">
-                        <h3>Бизнес-центр "Престиж"</h3>
-                        <p>Многофункциональный комплекс класса А</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="src/img/prog2.png" alt="Жилой комплекс" class="project-image">
-                    <div class="project-overlay">
-                        <h3>ЖК "Северное сияние"</h3>
-                        <p>Элитный жилой комплекс с развитой инфраструктурой</p>
-                    </div>
-                </div>
-                <div class="project-card">
+                <div class="project-card" data-category="industrial">
                     <img src="src/img/prog3.png" alt="Производственный комплекс" class="project-image">
                     <div class="project-overlay">
                         <h3>Производственный комплекс</h3>
                         <p>Современное предприятие полного цикла</p>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="src/img/prog1.png" alt="Бизнес-центр" class="project-image">
-                    <div class="project-overlay">
-                        <h3>Бизнес-центр "Престиж"</h3>
-                        <p>Многофункциональный комплекс класса А</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="src/img/prog2.png" alt="Жилой комплекс" class="project-image">
-                    <div class="project-overlay">
-                        <h3>ЖК "Северное сияние"</h3>
-                        <p>Элитный жилой комплекс с развитой инфраструктурой</p>
-                    </div>
-                </div>
-                <div class="project-card">
+                <div class="project-card" data-category="industrial">
                     <img src="src/img/prog3.png" alt="Производственный комплекс" class="project-image">
                     <div class="project-overlay">
                         <h3>Производственный комплекс</h3>
+                        <p>Современное предприятие полного цикла</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="landscapes">
+                    <img src="src/img/ландшафт.png" alt="елки иголки" class="project-image">
+                    <div class="project-overlay">
+                        <h3>елки иголки</h3>
+                        <p>Современное предприятие полного цикла</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="landscapes">
+                    <img src="src/img/ландшафт.png" alt="елки иголки" class="project-image">
+                    <div class="project-overlay">
+                        <h3>елки иголки</h3>
+                        <p>Современное предприятие полного цикла</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="landscapes">
+                    <img src="src/img/ландшафт.png" alt="елки иголки" class="project-image">
+                    <div class="project-overlay">
+                        <h3>елки иголки</h3>
+                        <p>Современное предприятие полного цикла</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="interior">
+                    <img src="src/img/интерьер.png" alt="интерьер" class="project-image">
+                    <div class="project-overlay">
+                        <h3>интерьер</h3>
+                        <p>Современное предприятие полного цикла</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="interior">
+                    <img src="src/img/интерьер.png" alt="интерьер" class="project-image">
+                    <div class="project-overlay">
+                        <h3>интерьер</h3>
+                        <p>Современное предприятие полного цикла</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="interior">
+                    <img src="src/img/интерьер.png" alt="интерьер" class="project-image">
+                    <div class="project-overlay">
+                        <h3>интерьер</h3>
                         <p>Современное предприятие полного цикла</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Контакты -->
     <section id="contact" class="contact">

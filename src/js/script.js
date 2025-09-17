@@ -66,3 +66,47 @@ window.addEventListener('resize', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('loaded');
 });
+
+// Функционал фильтрации проектов
+function initProjectFilter() {
+    const filterButtons = document.querySelectorAll('.tab-btn');
+    const projects = document.querySelectorAll('.project-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Удаляем активный класс у всех кнопок
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Добавляем активный класс к нажатой кнопке
+            button.classList.add('active');
+            
+            // Получаем категорию для фильтрации
+            const filterCategory = button.getAttribute('data-category');
+            
+            // Фильтруем проекты
+            projects.forEach(project => {
+                const projectCategory = project.getAttribute('data-category');
+                
+                if (filterCategory === 'all' || filterCategory === projectCategory) {
+                    project.style.display = 'block';
+                    setTimeout(() => {
+                        project.style.opacity = '1';
+                        project.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    project.style.opacity = '0';
+                    project.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        project.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+}
+
+// Добавьте эту строку в обработчик DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('loaded');
+    initProjectFilter(); // Добавьте эту строку вместо initProjectTabs()
+});
